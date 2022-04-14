@@ -14,7 +14,7 @@ server.use((err, req, res, next) => {
     res.status(500).json({ message: err.message, stack: err.stack })
 })
 
-server.get('/', (req, res) => {
+server.get('/api/users', (req, res) => {
     res.json({ message: 'api working' });
 })
 
